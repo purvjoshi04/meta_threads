@@ -7,6 +7,7 @@ import {
     FormField,
     FormItem,
     FormLabel,
+    FormMessage
 
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
@@ -91,9 +92,9 @@ const AccountProfile = ({ user, btnTitle }: Props) => {
                 path: pathname
             }
         );
-        if(pathname === '/profile/edit') {
+        if (pathname === '/profile/edit') {
             router.back();
-        }else {
+        } else {
             router.push('/');
         }
     }
@@ -139,7 +140,7 @@ const AccountProfile = ({ user, btnTitle }: Props) => {
 
                                 />
                             </FormControl>
-
+                            <FormMessage />
                         </FormItem>
                     )}
                 />
@@ -160,7 +161,7 @@ const AccountProfile = ({ user, btnTitle }: Props) => {
 
                                 />
                             </FormControl>
-
+                            <FormMessage />
                         </FormItem>
                     )}
                 />
@@ -181,7 +182,7 @@ const AccountProfile = ({ user, btnTitle }: Props) => {
 
                                 />
                             </FormControl>
-
+                            <FormMessage />
                         </FormItem>
                     )}
                 />
@@ -203,7 +204,7 @@ const AccountProfile = ({ user, btnTitle }: Props) => {
 
                                 />
                             </FormControl>
-
+                            <FormMessage />
                         </FormItem>
                     )}
                 />
