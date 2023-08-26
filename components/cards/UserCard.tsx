@@ -36,4 +36,4 @@ const UserCard = ({ id, name, username, imgUrl, personType }: Props) => {
     )
 }
 
-export default UserCard
+export default UserCard;
